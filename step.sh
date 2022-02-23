@@ -17,20 +17,26 @@ echo $app_url
     echo "Error uploading file to Browserstack"
     exit 1
   fi
-#
-# --- Export Environment Variables for other Steps:
-# You can export Environment Variables for other Steps with
-#  envman, which is automatically installed by `bitrise setup`.
-# A very simple example:
+  
+  
+  
+# #!/bin/bash
 
-# Envman can handle piped inputs, which is useful if the text you want to
-# share is complex and you don't want to deal with proper bash escaping:
-#  cat file_with_complex_input | envman add --KEY EXAMPLE_STEP_OUTPUT
-# You can find more usage examples on envman's GitHub page
-#  at: https://github.com/bitrise-io/envman
+# if [ -z "$browserstack_username" ]; then
+#   echo "Please provide your Browserstack Username"
+#   exit 1
+# fi
 
-#
-# --- Exit codes:
-# The exit code of your Step is very important. If you return
-#  with a 0 exit code `bitrise` will register your Step as "successful".
-# Any non zero exit code will be registered as "failed" by `bitrise`.
+# if [ -z "$browserstack_access_key" ]; then
+#   echo "Please provide your Browserstack Access Key"
+#   exit 1
+# fi
+
+# if [ -z "$apk_ipa_filepath" ]; then
+#   echo "Please provide the path for the IPA or APK that you wish to upload."
+#   echo "For IPA it is usually \$BITRISE_IPA_PATH"
+#   echo "For APK it is usually \$BITRISE_APK_PATH"
+#   exit 1
+# fi
+
+# curl -u "$browserstack_username:$browserstack_access_key" -X POST https://api-cloud.browserstack.com/app-live/upload -F "file=@$apk_ipa_filepath"
