@@ -8,14 +8,14 @@
 # - Bitrise CLI guides: http://devcenter.bitrise.io/bitrise-cli/
 
 title: |-
-  Browserstack App Automate Upload
+  Q Browserstack App Automate Upload
 summary: |
   Step to upload app to Browserstack app automate
 description: |
   Step to upload ipa, apk or abb files to Browserstack app automate service,. Step outputs Browserstack app url
-website: https://github.com/frkizg/bitrise_step.git
-source_code_url: https://github.com/frkizg/bitrise_step.git
-support_url: https://github.com/frkizg/bitrise_step.git
+website: https://github.com/Q-Agency/bitrise_step.git
+source_code_url: https://github.com/Q-Agency/bitrise_step.git
+support_url: https://github.com/Q-Agency/bitrise_step.git
 host_os_tags:
   - osx-10.10
   - ubuntu-16.04
