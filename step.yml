@@ -11,7 +11,7 @@ title: |-
   Q Browserstack App Automate Upload
 summary: |
   Step to upload app to Browserstack app automate
-description: >
+description: |
   Step to upload ipa, apk or abb files to Browserstack app automate service. 
   Step outputs Browserstack app url. 
   Please provide the path for the IPA or APK that you wish to upload.
@@ -90,13 +90,22 @@ inputs:
       is_required: true
       is_expand: true
   
-  - file_to_upload:
+  - file_to_upload_apk:
     opts:
-      title: "File to upload"
-      summary: "Select the file to upload"
-      description: "Select the file to upload"
+      title: "Android .apk to upload"
+      summary: "Select the .apk file to upload"
+      description: "Select the .apk file to upload"
       type: file
       is_required: true
+      is_expand: true
+      
+  - file_to_upload_ipa:
+    opts:
+      title: "Android .ipa to upload"
+      summary: "Select the .ipa file to upload"
+      description: "Select the .IPA file to upload"
+      type: file
+      is_required: false
       is_expand: true
 
 outputs:
