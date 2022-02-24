@@ -12,7 +12,11 @@ title: |-
 summary: |
   Step to upload app to Browserstack app automate
 description: |
-  Step to upload ipa, apk or abb files to Browserstack app automate service. Step outputs Browserstack app url.
+  Step to upload ipa, apk or abb files to Browserstack app automate service. 
+  Step outputs Browserstack app url. 
+  Please provide the path for the IPA or APK that you wish to upload.
+   For IPA it is usually $BITRISE_IPA_PATH
+   For APK it is usually $BITRISE_APK_PATH
 website: https://github.com/Q-Agency/bitrise_step.git
 source_code_url: https://github.com/Q-Agency/bitrise_step.git
 support_url: https://github.com/Q-Agency/bitrise_step.git
