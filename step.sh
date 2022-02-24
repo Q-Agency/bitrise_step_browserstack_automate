@@ -10,7 +10,7 @@ echo $app_url
     #app_url=`awk '{ print substr( $0, 1, length($0)-1 ) }'`
     #app_url=${app_url%??}
     echo $app_url
-    envman add --key BROWSERSTACK_APP_AUTOMATE_URL --value "$app_url"
+    envman add --key BROWSERSTACK_APP_AUTOMATE_APK_URL --value "$app_url"
     exit 0
   else
     echo $app_url
