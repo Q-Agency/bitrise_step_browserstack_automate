@@ -101,7 +101,7 @@ inputs:
       
   - file_to_upload_ipa:
     opts:
-      title: "Android .ipa to upload"
+      title: "iOS .ipa to upload"
       summary: "Select the .ipa file to upload"
       description: "Select the .ipa file to upload"
       type: file
