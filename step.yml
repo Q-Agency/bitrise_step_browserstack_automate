@@ -103,15 +103,15 @@ inputs:
     opts:
       title: "Android .ipa to upload"
       summary: "Select the .ipa file to upload"
-      description: "Select the .IPA file to upload"
+      description: "Select the .ipa file to upload"
       type: file
       is_required: false
       is_expand: true
 
 outputs:
-  - APP_URL: "$BROWSERSTACK_APP_AUTOMATE_IOS_URL"
+  - APP_URL: "$BROWSERSTACK_APP_AUTOMATE_APK_URL"
     opts:
-      title: "Browserstack App Automate App URL"
-      summary: "Url for your Browserstack App Automate app"
-      description: "Url for your Browserstack App Automate app"
+      title: "Browserstack App Automate App URL for APK"
+      summary: "Url for your Browserstack App Automate app APK"
+      description: "Url for your Browserstack App Automate app APK"
 
