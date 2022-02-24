@@ -113,7 +113,7 @@ outputs:
     opts:
       title: "Browserstack App Automate App URL for APK"
       summary: "Url for your Browserstack App Automate app APK"
-      description: "Url for your Browserstack App Automate app APK
+      description: "Url for your Browserstack App Automate app APK"
       
   - BROWSERSTACK_APP_AUTOMATE_IPA_URL:
     opts:
