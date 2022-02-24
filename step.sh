@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ex
 
-app_url=$(curl -u "${browserstack_user_name}:${browserstack_access_key}" -X POST "https://api-cloud.browserstack.com/app-automate/upload" -F "file=@$file_to_upload")
+app_url=$(curl -u "${browserstack_user_name}:${browserstack_access_key}" -X POST "https://api-cloud.browserstack.com/app-automate/upload" -F "file=@$file_to_upload_apk")
 
 echo $app_url
   if [[ "$app_url" == *"app_url"* ]]
@@ -17,26 +17,3 @@ echo $app_url
     echo "Error uploading file to Browserstack"
     exit 1
   fi
-  
-  
-  
-# #!/bin/bash
-
-# if [ -z "$browserstack_username" ]; then
-#   echo "Please provide your Browserstack Username"
-#   exit 1
-# fi
-
-# if [ -z "$browserstack_access_key" ]; then
-#   echo "Please provide your Browserstack Access Key"
-#   exit 1
-# fi
-
-# if [ -z "$apk_ipa_filepath" ]; then
-#   echo "Please provide the path for the IPA or APK that you wish to upload."
-#   echo "For IPA it is usually \$BITRISE_IPA_PATH"
-#   echo "For APK it is usually \$BITRISE_APK_PATH"
-#   exit 1
-# fi
-
-# curl -u "$browserstack_username:$browserstack_access_key" -X POST https://api-cloud.browserstack.com/app-live/upload -F "file=@$apk_ipa_filepath"
