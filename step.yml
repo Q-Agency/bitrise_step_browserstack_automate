@@ -109,9 +109,15 @@ inputs:
       is_expand: true
 
 outputs:
-  - APP_URL: "$BROWSERSTACK_APP_AUTOMATE_APK_URL"
+  - BROWSERSTACK_APP_AUTOMATE_APK_URL:
     opts:
       title: "Browserstack App Automate App URL for APK"
       summary: "Url for your Browserstack App Automate app APK"
-      description: "Url for your Browserstack App Automate app APK"
+      description: "Url for your Browserstack App Automate app APK
+      
+  - BROWSERSTACK_APP_AUTOMATE_IPA_URL:
+    opts:
+      title: "Browserstack App Automate App URL for IPA"
+      summary: "Url for your Browserstack App Automate app IPA"
+      description: "Url for your Browserstack App Automate app IPA"
 
