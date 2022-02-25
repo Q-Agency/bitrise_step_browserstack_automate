@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ex
 
-app_url=$(curl -u "mobile58:VXKExFmpqsSfyoNSXFy7" -X POST "https://api-cloud.browserstack.com/app-automate/upload" -F "file=@$file_to_upload_apk" -F "custom_id=${custom_id}")
+app_url=$(curl -u "${browserstack_user_name}:${browserstack_access_key}" -X POST "https://api-cloud.browserstack.com/app-automate/upload" -F "file=@$file_to_upload_apk" -F "custom_id=${custom_id}")
 
 echo $app_url
   if [[ "$app_url" == *"app_url"* ]]
