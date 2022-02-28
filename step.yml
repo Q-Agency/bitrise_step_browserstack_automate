@@ -68,14 +68,14 @@ toolkit:
 
 
 inputs:
-  - browserstack_user_name: $BROWSERSTACK_USER_NAME
+  - browserstack_user_name: $BROWSERSTACK_USERNAME
     opts:
       category: Browserstack credentials
       title: "Browserstack User Name"
       summary: "Enter your Browserstack User Name"
       description: "Enter your Browserstack User Name"
       type: text
-      is_sensitive: false
+      is_sensitive: true
       is_required: true
       is_expand: true
 
@@ -86,7 +86,7 @@ inputs:
       summary: "Enter your Browserstack Access Key"
       description: "Enter your Browserstack Access Key"
       type: text
-      is_sensitive: false
+      is_sensitive: true
       is_required: true
       is_expand: true
   
